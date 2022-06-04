@@ -1,19 +1,23 @@
 <template>
-  <div id="app">
-    <HelloWorld />
-  </div>
+  <v-app>
+    <top-nav />
+    <v-divider></v-divider>
+    <v-main>
+      <home />
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Home from "./components/Home";
+import TopNav from "./components/TopNav.vue";
 
 export default {
   name: "App",
+
   components: {
-    HelloWorld,
+    Home,
+    TopNav,
   },
 };
 </script>
-
-<style>
-</style>
